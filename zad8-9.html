@@ -1,0 +1,22 @@
+<a href="/exercise">Powrot</a></br>
+<h3>Tworzenie tabliczki mnozenia za pomoca funkcji z parametrami</h3>
+
+<form method="POST" action="zad8-9.php">
+    <label for="size">Rozmiar tabliczki</label>
+    <input type="number" name="size" min="1" required />
+
+    <label for="color">Kolor wyroznienia</label>
+    <input type="color" name="color" required />
+
+    <label for="aliquot">Wyroznij liczby podzielne przez</label>
+    <input type="number" name="aliquot" min="1" required />
+
+    <label for="displayBorder">Wyswietl obramowanie</label>
+    <input type="hidden" name="displayBorder" value="0" />
+    <input type="checkbox" name="displayBorder" value="1" checked />
+
+    <label for="title">Tytul</label>
+    <input type="text" name="title" min="1" max="100" required />
+
+    <input type="submit" value="Send" />
+</form>
