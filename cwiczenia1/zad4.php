@@ -1,4 +1,4 @@
-<a href="/exercise">Powrot</a>
+<a href="./">Powrot</a>
 
 <?php
 
