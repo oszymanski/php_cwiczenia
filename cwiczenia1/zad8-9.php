@@ -1,4 +1,4 @@
-<a href="/exercise">Powrot</a></br>
+<a href="./">Powrot</a></br>
 
 <?php
 $size = $_POST['size'];
