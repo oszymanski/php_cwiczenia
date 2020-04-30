@@ -1,0 +1,41 @@
+<a href="./">Powrot</a></br>
+
+<h3>formularz dodajacy studenta do bazy</h3>
+
+<form id="student-form" method="POST" action="zad101.php">
+    <label for="name">Imie</label>
+    <input type="text" maxlength="100" name="name" required />
+
+    <label for="surname">Nazwisko</label>
+    <input type="text" maxlength="100" name="surname" required />
+
+    <label for="birthday">Data urodzenia</label>
+    <input type="date" name="birthday" required />
+
+    <label for="gender">Plec</label>
+    <select name="gender">
+        <option value="K">Kobieta</option>
+        <option value="M">Mezczyzna</option>
+    </select>
+
+    <label for="children_amount">Liczba dzieci</label>
+    <input type="number" name="children_amount" value="0" required />
+
+    <label for="is_scholar">Czy pobiera stypendium</label>
+    <input type="hidden" name="is_scholar" value="0" />
+    <input type="checkbox" name="is_scholar" value="1" />
+
+    <input type="submit" value="Zatwierdz" />
+</form>
+
+<style>
+    #student-form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 75%;
+    }
+
+    input {
+        margin-bottom: 4px;
+    }
+</style>
