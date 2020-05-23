@@ -1,0 +1,47 @@
+<a href="./select.php">Powrot</a></br>
+
+<h3>Formularz dodajacy klienta do bazy</h3>
+
+<form id="client-form" method="POST" action="insert_action.php">
+    <label for="name">Imie</label>
+    <input type="text" maxlength="100" name="name" required />
+
+    <label for="surname">Nazwisko</label>
+    <input type="text" maxlength="100" name="surname" required />
+
+    <label for="birthday">Data urodzenia</label>
+    <input type="date" name="birthday" required />
+
+    <label for="gender">Plec</label>
+    <select name="gender">
+        <option value="K">Kobieta</option>
+        <option value="M">Mezczyzna</option>
+    </select>
+
+    <label for="children_amount">Liczba dzieci</label>
+    <input type="number" name="children_amount" value="0" min="0" max="20" required />
+
+    <label for='country'>Kraj</label>
+    <input type='text' maxlength='100' name='country' required />
+
+    <label for='city'>Miasto</label>
+    <input type='text' maxlength='100' name='city' required />
+
+    <label for='is_vip'>Czy jest VIPem</label>
+    <input type=hidden name='is_vip' value='0' />
+    <input type='checkbox' name='is_vip' value='1' />
+
+    <input type="submit" value="Zatwierdz" />
+</form>
+
+<style>
+    #client-form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 75%;
+    }
+
+    input {
+        margin-bottom: 4px;
+    }
+</style>
