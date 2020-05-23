@@ -1,0 +1,32 @@
+<h3>Formularz do edycji imienia i nazwiska studenta</h3>
+
+<form id="student-form" method="POST" action="script.php">
+    <label for="name">Imie</label>
+    <input type="text" maxlength="100" name="name" required />
+
+    <label for="surname">Nazwisko</label>
+    <input type="text" maxlength="100" name="surname" required />
+
+    <label for="id">Id studenta</label>
+    <input type="number" name="id" required />
+
+    <label for="method">Metoda</label>
+    <select name="method">
+        <option value="mysqli">MySQLi</option>
+        <option value="pdo">PDO</option>
+    </select>
+
+    <input type="submit" value="Zatwierdz" />
+</form>
+
+<style>
+    #student-form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 75%;
+    }
+
+    input {
+        margin-top: 4px;
+    }
+</style>
